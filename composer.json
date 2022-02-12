@@ -1,7 +1,6 @@
 {
     "name": "axeldotdev/laravel-airtable",
     "description": "laravel-airtable allows you to import your Airtable data into your Laravel database.",
-    "version": "1.0.3",
     "keywords": [
         "axeldotdev",
         "laravel-airtable"
@@ -11,10 +10,19 @@
     "authors": [
         {
             "name": "axeldotdev",
-            "email": "axel.charpentier@hey.com",
-            "role": "Developer"
+            "email": "axelcharpentier0@icloud.com",
+            "role": "Developer",
+            "homepage": "https://github.com/axeldotdev"
         }
     ],
+    "readme": "https://github.com/axeldotdev/laravel-airtable/blob/main/README.md",
+    "support": {
+        "email": "axelcharpentier0@icloud.com",
+        "source": "https://github.com/axeldotdev/laravel-airtable",
+        "issues": "https://github.com/axeldotdev/laravel-airtable/issues",
+        "docs": "https://github.com/axeldotdev/laravel-airtable/wiki",
+        "chat": "https://github.com/axeldotdev/laravel-airtable/discussions"
+    },
     "require": {
         "php": ">=7.4",
         "guzzlehttp/guzzle": "^7.3",
