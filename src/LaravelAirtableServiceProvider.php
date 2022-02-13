@@ -1,29 +1,22 @@
 <?php
 
-namespace AxelDotDev\LaravelAirtable;
+namespace Axeldotdev\LaravelStarter;
 
-use Illuminate\Support\ServiceProvider;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
+use AxelDotDev\LaravelAirtable\Commands\MakeExportCommand;
+use AxelDotDev\LaravelAirtable\Commands\MakeImportCommand;
 
-class LaravelAirtableServiceProvider extends ServiceProvider
+class LaravelStarterServiceProvider extends PackageServiceProvider
 {
-    public function boot()
+    public function configurePackage(Package $package): void
     {
-        if ($this->app->runningInConsole()) {
-            $this->publishes([
-                __DIR__ . '/../config/laravel-airtable.php' => config_path('laravel-airtable.php'),
-            ], 'config');
-        }
-    }
-
-    public function register()
-    {
-        $this->mergeConfigFrom(__DIR__ . '/../config/laravel-airtable.php', 'laravel-airtable');
-
-        $this->app->bind(Airtableable::class, function ($app) {
-            return new Airtable(
-                config('laravel-airtable.uri'),
-                config('laravel-airtable.key'),
+        $package
+            ->name('laravel-airtable')
+            ->hasConfigFile()
+            ->hasCommands(
+                MakeExportCommand::class,
+                MakeImportCommand::class,
             );
-        });
     }
 }

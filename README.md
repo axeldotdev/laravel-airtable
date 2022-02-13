@@ -15,36 +15,20 @@ Laravel Airtable allows you to import your Airtable data into your Laravel datab
 You can install the package via composer:
 
 ```bash
-composer require axeldotdev/laravel-airtable
+composer require --dev axeldotdev/laravel-airtable
 ```
+
+The minimum PHP version required is **8.1**.
 
 You can publish the config file with:
+
 ```bash
-php artisan vendor:publish --provider="AxelDotDev\LaravelAirtable\LaravelAirtableServiceProvider" --tag="config"
+php artisan vendor:publish --tag="laravel-airtable-config"
 ```
 
-This is the contents of the published config file:
+## Usage
 
-```php
-return [
-    'uri' => 'https://api.airtable.com/v0/',
-
-    /*
-    |--------------------------------------------------------------------------
-    | Airtable Key
-    |--------------------------------------------------------------------------
-    |
-    | This value can be found in your Airtable account page:
-    | https://airtable.com/account
-    |
-     */
-    'key' => env('AIRTABLE_KEY'),
-];
-```
-
-## Documentation
-
-In progress 🚧
+TODO
 
 ## Testing
 

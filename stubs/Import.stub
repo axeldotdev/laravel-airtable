@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Airtable\Imports;
+
+use Axeldotdev\LaravelAirtable\Contracts\Importable;
+use Illuminate\Support\Collection;
+
+class {name} implements Importable
+{
+    public function data(Collection $data): void
+    {
+        //
+    }
+
+    public function map(): mixed
+    {
+        return [];
+    }
+}

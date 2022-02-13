@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Airtable\Exports;
+
+use Axeldotdev\LaravelAirtable\Contracts\Exportable;
+use Illuminate\Support\Collection;
+
+class {name} implements Exportable
+{
+    public function data(): Collection
+    {
+        return new Collection();
+    }
+
+    public function map(): array
+    {
+        return [
+            //
+        ];
+    }
+}

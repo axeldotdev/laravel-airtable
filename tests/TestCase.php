@@ -1,25 +1,14 @@
 <?php
 
-namespace AxelDotDev\LaravelAirtable\Tests;
+namespace Axeldotdev\LaravelAirtable\Tests;
 
-use AxelDotDev\LaravelAirtable\LaravelAirtableServiceProvider;
+use Axeldotdev\LaravelAirtable\LaravelAirtableServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
-    public function setUp(): void
+    protected function getPackageProviders($app): array
     {
-        parent::setUp();
-    }
-
-    protected function getPackageProviders($app)
-    {
-        return [
-            LaravelAirtableServiceProvider::class,
-        ];
-    }
-
-    public function getEnvironmentSetUp($app)
-    {
+        return [LaravelAirtableServiceProvider::class];
     }
 }
