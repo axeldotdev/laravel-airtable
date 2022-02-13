@@ -9,7 +9,7 @@ use Illuminate\Filesystem\Filesystem;
 class MakeExportCommand extends Command
 {
     /** @var string */
-    public $signature = 'airtable:export {name}';
+    public $signature = 'airtable:export {name : The export name}';
 
     /** @var string */
     public $description = 'Create an export class for Airtable.';

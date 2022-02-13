@@ -9,7 +9,7 @@ use Illuminate\Filesystem\Filesystem;
 class MakeImportCommand extends Command
 {
     /** @var string */
-    public $signature = 'airtable:import {name}';
+    public $signature = 'airtable:import {name : The import name}';
 
     /** @var string */
     public $description = 'Create an import class for Airtable.';
