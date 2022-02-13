@@ -1,11 +1,10 @@
 <h1><center>Laravel Airtable</center></h1>
 
-<p align="center">
-  <a href="https://github.com/axeldotdev/laravel-airtable/actions"><img src="https://img.shields.io/github/workflow/status/axeldotdev/laravel-airtable/Tests.svg" alt="Build Status"></img></a>
-  <a href="https://packagist.org/packages/axeldotdev/laravel-airtable"><img src="https://img.shields.io/packagist/dt/axeldotdev/laravel-airtable.svg" alt="Total Downloads"></a>
-  <a href="https://packagist.org/packages/axeldotdev/laravel-airtable"><img src="https://img.shields.io/packagist/v/axeldotdev/laravel-airtable.svg?label=stable" alt="Latest Stable Version"></a>
-  <a href="https://packagist.org/packages/axeldotdev/laravel-airtable"><img src="https://img.shields.io/packagist/l/axeldotdev/laravel-airtable.svg" alt="License"></a>
-</p>
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/axeldotdev/laravel-airtable.svg?style=flat-square)](https://packagist.org/packages/axeldotdev/laravel-airtable)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/axeldotdev/laravel-airtable/run-tests?label=tests)](https://github.com/axeldotdev/laravel-airtable/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/axeldotdev/laravel-airtable/Check%20&%20fix%20styling?label=code%20style)](https://github.com/axeldotdev/laravel-airtable/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/axeldotdev/laravel-airtable.svg?style=flat-square)](https://packagist.org/packages/axeldotdev/laravel-airtable)
+[![License](https://img.shields.io/packagist/l/axeldotdev/laravel-airtable.svg?style=flat-square)](https://packagist.org/packages/axeldotdev/laravel-airtable)
 
 Laravel Airtable allows you to import your Airtable data into your Laravel database.
 
