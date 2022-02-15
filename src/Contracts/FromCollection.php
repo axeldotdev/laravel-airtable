@@ -4,9 +4,7 @@ namespace AxelDotDev\LaravelAirtable\Contracts;
 
 use Illuminate\Support\Collection;
 
-interface Exportable
+interface FromCollection extends Export
 {
     public function data(): Collection;
-
-    public function map(Collection $data): array;
 }

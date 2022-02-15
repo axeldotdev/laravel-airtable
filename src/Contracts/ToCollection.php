@@ -4,9 +4,7 @@ namespace AxelDotDev\LaravelAirtable\Contracts;
 
 use Illuminate\Support\Collection;
 
-interface Importable
+interface ToCollection extends Import
 {
     public function data(Collection $data): void;
-
-    public function map(): mixed;
 }
