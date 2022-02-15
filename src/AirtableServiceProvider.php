@@ -7,12 +7,12 @@ use Spatie\LaravelPackageTools\PackageServiceProvider;
 use AxelDotDev\LaravelAirtable\Commands\MakeExportCommand;
 use AxelDotDev\LaravelAirtable\Commands\MakeImportCommand;
 
-class LaravelStarterServiceProvider extends PackageServiceProvider
+class AirtableServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('laravel-airtable')
+            ->name('airtable')
             ->hasConfigFile()
             ->hasCommands(
                 MakeExportCommand::class,

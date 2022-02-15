@@ -12,10 +12,9 @@ class {name} implements Exportable
         return new Collection();
     }
 
-    public function map(): array
+    public function map(Collection $data): array
     {
         return [
-            //
         ];
     }
 }
