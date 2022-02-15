@@ -28,7 +28,45 @@ php artisan vendor:publish --tag="laravel-airtable-config"
 
 ## Usage
 
-TODO
+### Create an export class
+
+You can create an export class with the command below:
+
+```bash
+php artisan airtable:export PostExport
+```
+
+Next, you can use this export class in your controller or command like this:
+
+```php
+use Axeldotdev\LaravelAirtable\Facades\Airtable;
+use App\Airtable\Exports\PostExport;
+
+$base_id = 'shdbvc67jbdsc67';
+$view_name = 'View Grid';
+
+Airtable::export(new PostExport(), $base_id, $view_name);
+```
+
+### Create an import class
+
+You can create an import class with the command below:
+
+```bash
+php artisan airtable:import PostImport
+```
+
+Next, you can use this import class in your controller or command like this:
+
+```php
+use Axeldotdev\LaravelAirtable\Facades\Airtable;
+use App\Airtable\Imports\PostImport;
+
+$base_id = 'shdbvc67jbdsc67';
+$view_name = 'View Grid';
+
+Airtable::import(new PostImport(), $base_id, $view_name);
+```
 
 ## Testing
 
