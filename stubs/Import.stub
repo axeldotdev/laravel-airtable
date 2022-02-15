@@ -2,18 +2,30 @@
 
 namespace App\Airtable\Imports;
 
-use Axeldotdev\LaravelAirtable\Contracts\Importable;
+use Axeldotdev\LaravelAirtable\Contracts\ToCollection;
+use Axeldotdev\LaravelAirtable\Contracts\WithMapping;
+use Axeldotdev\LaravelAirtable\Contracts\WithRules;
+use Axeldotdev\LaravelAirtable\Concerns\Importable;
 use Illuminate\Support\Collection;
 
-class {name} implements Importable
+class {name} extends Import implements ToCollection, WithMapping, WithRules
 {
+    use Importable;
+
     public function data(Collection $data): void
     {
+        //
     }
 
-    public function map(): mixed
+    public function map(array|object $data): array|object
+    {
+        //
+    }
+
+    public function rules(): array
     {
         return [
+            //
         ];
     }
 }

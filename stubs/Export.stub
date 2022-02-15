@@ -2,19 +2,22 @@
 
 namespace App\Airtable\Exports;
 
-use Axeldotdev\LaravelAirtable\Contracts\Exportable;
+use Axeldotdev\LaravelAirtable\Contracts\FromCollection;
+use Axeldotdev\LaravelAirtable\Contracts\WithMapping;
+use Axeldotdev\LaravelAirtable\Concerns\Exportable;
 use Illuminate\Support\Collection;
 
-class {name} implements Exportable
+class {name} implements FromCollection, WithMapping
 {
+    use Exportable;
+
     public function data(): Collection
     {
-        return new Collection();
+        //
     }
 
-    public function map(Collection $data): array
+    public function map(array|object $data): array|object
     {
-        return [
-        ];
+        //
     }
 }
